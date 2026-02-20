@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rewarded Ad Page</title>
+
+<script>
+function showAd() {
+    alert("Ad is playing...");
+
+    // محاكاة إعلان لمدة 5 ثواني
+    setTimeout(function(){
+        giveReward();
+    }, 5000);
+}
+
+function giveReward(){
+    alert("You earned 200 coins!");
+}
+</script>
+
+</head>
+<body style="text-align:center; margin-top:100px; font-family:Arial;">
+    <h1>Watch Ad To Earn Coins</h1>
+    <button onclick="showAd()" style="padding:15px 30px; font-size:20px;">
+        Watch Ad
+    </button>
+</body>
+</html>
